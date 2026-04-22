@@ -85,6 +85,7 @@ function App() {
     return `${address.slice(0, 7)}...${address.slice(-6)}`
   }, [address])
 
+// Call a read-only contract function via the Stacks API
   const callReadOnly = useCallback(
     async (functionName: string, args: string[] = []) => {
       const sender = address || CONTRACT_ADDRESS
