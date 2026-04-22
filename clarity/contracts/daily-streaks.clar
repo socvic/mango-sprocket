@@ -272,6 +272,7 @@
 )
 
 (define-public (create-group (name (string-utf8 48)) (max-members uint))
+;; Create a new group with a name and maximum member count (min 2)
 	(begin
 		(asserts! (>= max-members u2) ERR_INVALID_GROUP)
 		(let ((next-id (+ (var-get group-nonce) u1)))
