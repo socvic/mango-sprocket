@@ -262,6 +262,7 @@
 )
 
 (define-public (remove-friend (friend principal))
+;; Remove the bidirectional friend relationship
 	(begin
 		(asserts! (is-some (map-get? friends { user: tx-sender, friend: friend })) ERR_NOT_FRIEND)
 		(map-delete friends { user: tx-sender, friend: friend })
