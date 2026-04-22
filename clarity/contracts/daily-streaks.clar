@@ -8,6 +8,7 @@
 ;; ~24 blocks = ~4 hours grace after window
 
 ;;
+;;; === Error Codes ===
 (define-constant ERR_TOO_SOON (err u100))
 (define-constant ERR_INVALID_CHALLENGE (err u101))
 (define-constant ERR_ALREADY_JOINED (err u102))
