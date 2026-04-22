@@ -53,6 +53,7 @@
 		total-checkins: uint,
 		badge-level: uint,
 		freeze-passes: uint,
+;; Stores per-user streak, badge, and freeze pass state
 	}
 )
 
