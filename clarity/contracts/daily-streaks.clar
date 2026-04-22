@@ -5,6 +5,7 @@
 (define-constant CHECKIN_WINDOW_BLOCKS u144)
 ;; ~144 blocks = ~24 hours at ~10min per block
 (define-constant GRACE_BLOCKS u24)
+;; ~24 blocks = ~4 hours grace after window
 
 ;;
 (define-constant ERR_TOO_SOON (err u100))
