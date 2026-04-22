@@ -25,6 +25,7 @@ type Profile = {
   freezePasses: number
 }
 
+/** Challenge details including user-specific join and submission state */
 type ChallengeDetails = {
   id: number
   title: string
