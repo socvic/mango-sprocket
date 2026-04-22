@@ -361,6 +361,7 @@
 )
 
 (define-read-only (can-check-in (who principal))
+;; Returns whether the given principal is eligible to check in now
 	(let (
 			(profile (get-profile-internal who))
 			(last-checkin (get last-checkin profile))
