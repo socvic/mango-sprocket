@@ -18,6 +18,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+// === Configuration ===
 const STACKS_API_URL =
   process.env.STACKS_API_URL || "https://api.mainnet.hiro.so";
 const DEPLOYER_ADDRESS =
