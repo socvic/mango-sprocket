@@ -35,6 +35,7 @@
 (define-constant ERR_NOT_MEMBER (err u115))
 (define-constant ERR_OWNER_ONLY (err u116))
 (define-constant ERR_OWNER_CANNOT_LEAVE (err u117))
+;; Returned when group owner attempts to leave their own group
 
 (define-data-var total-users uint u0)
 (define-data-var total-checkins uint u0)
