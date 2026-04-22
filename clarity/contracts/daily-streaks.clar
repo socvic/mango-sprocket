@@ -110,6 +110,7 @@
 )
 
 (define-map groups
+;; Stores group metadata keyed by group id
 	uint
 	{
 		owner: principal,
