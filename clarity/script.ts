@@ -163,6 +163,10 @@ function parseRetryAfterMs(value: string | null): number | null {
   return Math.floor(sec * 1000);
 }
 
+/**
+ * Broadcast a signed transaction with exponential backoff retry.
+ * Retries on 429 and 5xx responses.
+ */
 async function broadcastWithRetry(
   transaction: Awaited<ReturnType<typeof makeContractCall>>,
 ): Promise<BroadcastResponse> {
