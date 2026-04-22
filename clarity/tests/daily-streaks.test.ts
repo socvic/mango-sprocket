@@ -10,6 +10,7 @@ const wallet1 = accounts.get("wallet_1")!;
 const wallet2 = accounts.get("wallet_2")!;
 const wallet3 = accounts.get("wallet_3")!;
 
+// Test suite covering check-in logic, streaks, badges, challenges, friends, groups, and freeze passes
 describe("daily-streaks", () => {
     it("initial check-in starts streak and updates totals", () => {
         const checkIn = simnet.callPublicFn("daily-streaks", "check-in", [], wallet1);
