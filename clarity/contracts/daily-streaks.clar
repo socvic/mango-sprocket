@@ -25,6 +25,7 @@
 (define-constant ERR_NOT_MISSED (err u107))
 (define-constant ERR_TOO_MUCH_MISSED (err u108))
 (define-constant ERR_SELF_FRIEND (err u109))
+;; Returned when user tries to add themselves as a friend
 (define-constant ERR_ALREADY_FRIEND (err u110))
 (define-constant ERR_NOT_FRIEND (err u111))
 (define-constant ERR_INVALID_GROUP (err u112))
