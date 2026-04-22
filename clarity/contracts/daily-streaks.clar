@@ -337,6 +337,7 @@
 	)
 )
 
+;;; === Read-Only Functions ===
 (define-read-only (get-profile (who principal))
 	(ok (get-profile-internal who))
 )
