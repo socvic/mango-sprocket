@@ -434,6 +434,7 @@
 	)
 )
 
+;;; === Private Functions ===
 (define-private (perform-check-in (note (optional (string-utf8 140))))
 	(let (
 			(height burn-block-height)
