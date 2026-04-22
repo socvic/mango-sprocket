@@ -101,6 +101,7 @@
 )
 
 (define-map friends
+;; Bidirectional friend relationship map
 	{
 		user: principal,
 		friend: principal,
