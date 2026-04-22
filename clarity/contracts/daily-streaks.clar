@@ -522,6 +522,7 @@
 	)
 )
 
+;;; Badge thresholds: 7 days = level 1, 30 = 2, 100 = 3, 365 = 4
 (define-private (compute-badge-level (streak uint))
 	(if (>= streak u365)
 		u4
