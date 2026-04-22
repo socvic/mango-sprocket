@@ -174,6 +174,7 @@
 )
 
 (define-public (create-challenge (title (string-utf8 48)) (start-height uint) (end-height uint))
+;; Create a new challenge with a title, start height, and end height
 	(begin
 		(asserts! (> end-height start-height) ERR_INVALID_CHALLENGE)
 		(asserts! (>= start-height burn-block-height) ERR_INVALID_CHALLENGE)
