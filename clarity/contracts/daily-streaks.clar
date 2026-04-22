@@ -10,6 +10,7 @@
 ;;
 ;;; === Error Codes ===
 (define-constant ERR_TOO_SOON (err u100))
+;; Returned when user tries to check in before the next eligible window
 (define-constant ERR_INVALID_CHALLENGE (err u101))
 (define-constant ERR_ALREADY_JOINED (err u102))
 (define-constant ERR_NOT_JOINED (err u103))
