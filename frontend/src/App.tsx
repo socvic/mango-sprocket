@@ -16,6 +16,7 @@ type Stats = {
   totalGroups: number
 }
 
+/** User profile data from the contract */
 type Profile = {
   streak: number
   bestStreak: number
