@@ -14,6 +14,7 @@
 (define-constant ERR_INVALID_CHALLENGE (err u101))
 ;; Returned for invalid or malformed challenge parameters
 (define-constant ERR_ALREADY_JOINED (err u102))
+;; Returned when user attempts to join a challenge they already joined
 (define-constant ERR_NOT_JOINED (err u103))
 (define-constant ERR_NOT_ACTIVE (err u104))
 (define-constant ERR_NOT_IN_WINDOW (err u105))
