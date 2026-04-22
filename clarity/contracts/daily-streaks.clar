@@ -18,6 +18,7 @@
 (define-constant ERR_NOT_JOINED (err u103))
 ;; Returned when a non-member tries to submit a challenge check-in
 (define-constant ERR_NOT_ACTIVE (err u104))
+;; Returned when interacting with an inactive challenge or group
 (define-constant ERR_NOT_IN_WINDOW (err u105))
 (define-constant ERR_NO_FREEZE_PASS (err u106))
 (define-constant ERR_NOT_MISSED (err u107))
