@@ -3,6 +3,7 @@ import { Cl, cvToHex, cvToJSON, hexToCV, type ClarityValue } from '@stacks/trans
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './App.css'
 
+// Contract configuration from environment variables
 const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || 'SP2V3QE7H5D09N108CJ4QPS281Z3XAZVD87R8FJ27'
 const CONTRACT_NAME = import.meta.env.VITE_CONTRACT_NAME || 'daily-streaks'
 const STACKS_API_BASE = import.meta.env.VITE_STACKS_API_BASE || 'https://api.hiro.so'
