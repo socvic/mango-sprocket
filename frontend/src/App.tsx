@@ -107,6 +107,7 @@ function App() {
     [address],
   )
 
+// Submit a contract call transaction via the connected wallet
   const callTx = useCallback(
     async (functionName: string, functionArgs: ClarityValue[]) => {
       const typedContractId = contractId as `${string}.${string}`
