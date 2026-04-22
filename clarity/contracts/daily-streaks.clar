@@ -80,6 +80,7 @@
 		end-height: uint,
 		active: bool,
 		participants: uint,
+;; Stores challenge metadata keyed by challenge id
 	}
 )
 
