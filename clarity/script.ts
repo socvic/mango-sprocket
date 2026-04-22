@@ -118,6 +118,7 @@ async function runInBatches<T, U>(
   return settled;
 }
 
+/** Fetch the next nonce for a given address from the Stacks API */
 async function fetchNonce(address: string): Promise<bigint> {
   const url = `${STACKS_API_URL}/extended/v1/address/${address}/nonces`;
   const response = await fetch(url, {
