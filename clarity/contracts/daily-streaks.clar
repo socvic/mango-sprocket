@@ -1,5 +1,6 @@
 ;; Daily check-in streak tracker with social and campaign primitives.
 
+
 (define-constant CHECKIN_WINDOW_BLOCKS u144)
 (define-constant GRACE_BLOCKS u24)
 
