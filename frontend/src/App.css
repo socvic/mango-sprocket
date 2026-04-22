@@ -202,6 +202,7 @@ textarea:focus {
   resize: vertical;
 }
 
+/* === Buttons === */
 button {
   border: 1px solid var(--button-border);
   background: linear-gradient(180deg, var(--button-start), var(--button-end));
