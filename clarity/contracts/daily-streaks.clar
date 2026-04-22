@@ -5,6 +5,7 @@
 (define-constant CHECKIN_WINDOW_BLOCKS u144)
 (define-constant GRACE_BLOCKS u24)
 
+;;
 (define-constant ERR_TOO_SOON (err u100))
 (define-constant ERR_INVALID_CHALLENGE (err u101))
 (define-constant ERR_ALREADY_JOINED (err u102))
