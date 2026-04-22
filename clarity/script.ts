@@ -81,6 +81,7 @@ const network = createNetwork({
   client: { baseUrl: STACKS_API_URL },
 });
 
+/** Simple promise-based delay utility */
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
