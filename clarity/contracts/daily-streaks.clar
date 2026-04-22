@@ -16,6 +16,7 @@
 (define-constant ERR_ALREADY_JOINED (err u102))
 ;; Returned when user attempts to join a challenge they already joined
 (define-constant ERR_NOT_JOINED (err u103))
+;; Returned when a non-member tries to submit a challenge check-in
 (define-constant ERR_NOT_ACTIVE (err u104))
 (define-constant ERR_NOT_IN_WINDOW (err u105))
 (define-constant ERR_NO_FREEZE_PASS (err u106))
