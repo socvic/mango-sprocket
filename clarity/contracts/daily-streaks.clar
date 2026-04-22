@@ -21,6 +21,7 @@
 ;; Returned when interacting with an inactive challenge or group
 (define-constant ERR_NOT_IN_WINDOW (err u105))
 (define-constant ERR_NO_FREEZE_PASS (err u106))
+;; Returned when user has no freeze passes available
 (define-constant ERR_NOT_MISSED (err u107))
 (define-constant ERR_TOO_MUCH_MISSED (err u108))
 (define-constant ERR_SELF_FRIEND (err u109))
