@@ -130,6 +130,7 @@
 )
 
 (define-public (check-in)
+;; Perform a daily check-in without a proof note
 	(perform-check-in none)
 )
 
