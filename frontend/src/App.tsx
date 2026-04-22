@@ -135,6 +135,7 @@ function App() {
     })
   }, [callReadOnly])
 
+// Fetch user profile, check-in eligibility, and latest note
   const refreshProfile = useCallback(async () => {
     if (!address) {
       setProfile({ streak: 0, bestStreak: 0, totalCheckins: 0, badgeLevel: 0, freezePasses: 0 })
