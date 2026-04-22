@@ -8,6 +8,7 @@ const CONTRACT_NAME = import.meta.env.VITE_CONTRACT_NAME || 'daily-streaks'
 const STACKS_API_BASE = import.meta.env.VITE_STACKS_API_BASE || 'https://api.hiro.so'
 const NETWORK = import.meta.env.VITE_STACKS_NETWORK || 'mainnet'
 
+/** Global contract statistics from get-global-stats */
 type Stats = {
   totalUsers: number
   totalCheckins: number
