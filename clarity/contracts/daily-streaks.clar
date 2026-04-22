@@ -251,6 +251,7 @@
 )
 
 (define-public (add-friend (friend principal))
+;; Add a bidirectional friend relationship
 	(begin
 		(asserts! (not (is-eq tx-sender friend)) ERR_SELF_FRIEND)
 		(asserts! (not (is-some (map-get? friends { user: tx-sender, friend: friend }))) ERR_ALREADY_FRIEND)
