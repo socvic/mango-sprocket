@@ -123,6 +123,7 @@ function App() {
     [contractId],
   )
 
+// Fetch global stats from the contract
   const refreshStats = useCallback(async () => {
     const response = await callReadOnly('get-global-stats')
     const tuple = response.value.value
