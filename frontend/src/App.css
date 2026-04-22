@@ -2,6 +2,7 @@
  * Daily Check-In Streaks — App Styles
  * Color palette: warm earth tones with teal accent buttons
  */
+/* === Layout === */
 .page {
   width: min(1050px, 100%);
   margin: 0 auto;
