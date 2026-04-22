@@ -1,3 +1,7 @@
+/**
+ * Burst transaction script for load-testing the daily-streaks contract.
+ * Generates random contract interactions from derived wallet accounts.
+ */
 import { generateWallet, generateNewAccount } from "@stacks/wallet-sdk";
 import {
   makeContractCall,
