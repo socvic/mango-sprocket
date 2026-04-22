@@ -339,6 +339,7 @@
 
 ;;; === Read-Only Functions ===
 (define-read-only (get-profile (who principal))
+;; Returns the full profile tuple for a given principal
 	(ok (get-profile-internal who))
 )
 
