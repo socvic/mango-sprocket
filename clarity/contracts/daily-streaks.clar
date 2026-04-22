@@ -540,6 +540,7 @@
 )
 
 (define-private (get-profile-internal (who principal))
+;; Internal: returns profile or default zero-value tuple if not found
 	(default-to
 		{
 			last-checkin: u0,
