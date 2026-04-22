@@ -135,6 +135,7 @@
 )
 
 (define-public (check-in-with-note (note (optional (string-utf8 140))))
+;; Perform a daily check-in with an optional proof note (max 140 chars)
 	(perform-check-in note)
 )
 
