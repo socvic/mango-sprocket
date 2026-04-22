@@ -86,6 +86,10 @@ function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/**
+ * Process items in controlled batches with delay between batches.
+ * Respects API rate limits by spacing out requests.
+ */
 async function runInBatches<T, U>(
   items: T[],
   batchSize: number,
