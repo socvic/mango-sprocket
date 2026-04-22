@@ -30,6 +30,7 @@
 (define-constant ERR_NOT_FRIEND (err u111))
 (define-constant ERR_INVALID_GROUP (err u112))
 (define-constant ERR_GROUP_FULL (err u113))
+;; Returned when group has reached its max-members capacity
 (define-constant ERR_ALREADY_MEMBER (err u114))
 (define-constant ERR_NOT_MEMBER (err u115))
 (define-constant ERR_OWNER_ONLY (err u116))
