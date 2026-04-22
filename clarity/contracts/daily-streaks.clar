@@ -436,6 +436,7 @@
 
 ;;; === Private Functions ===
 (define-private (perform-check-in (note (optional (string-utf8 140))))
+;; Internal: handles check-in logic including streak calculation and badge upgrades
 	(let (
 			(height burn-block-height)
 			(profile (get-profile-internal tx-sender))
