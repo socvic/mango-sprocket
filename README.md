@@ -1,5 +1,7 @@
 # Daily Check-In Streaks (Standalone Project)
 
+> An on-chain daily habit tracker built on Stacks with Clarity smart contracts.
+
 This is a standalone Stacks project outside the `stacks/` docs folder.
 
 ## Project layout
