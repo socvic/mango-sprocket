@@ -37,6 +37,10 @@ type ChallengeDetails = {
   submissions: number
 }
 
+/**
+ * Main application component for the Daily Check-In Streaks dApp.
+ * Handles wallet connection, contract interactions, and state display.
+ */
 function App() {
   const [address, setAddress] = useState('')
   const [stats, setStats] = useState<Stats>({
