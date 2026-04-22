@@ -12,6 +12,7 @@
 (define-constant ERR_TOO_SOON (err u100))
 ;; Returned when user tries to check in before the next eligible window
 (define-constant ERR_INVALID_CHALLENGE (err u101))
+;; Returned for invalid or malformed challenge parameters
 (define-constant ERR_ALREADY_JOINED (err u102))
 (define-constant ERR_NOT_JOINED (err u103))
 (define-constant ERR_NOT_ACTIVE (err u104))
