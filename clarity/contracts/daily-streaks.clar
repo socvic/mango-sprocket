@@ -43,6 +43,7 @@
 (define-data-var challenge-nonce uint u0)
 (define-data-var group-nonce uint u0)
 
+;;; === Maps ===
 (define-map profiles
 	principal
 	{
