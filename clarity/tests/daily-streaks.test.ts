@@ -1,3 +1,7 @@
+/**
+ * Unit tests for the daily-streaks Clarity contract.
+ * Uses Clarinet SDK simnet for on-chain simulation.
+ */
 import { describe, expect, it } from "vitest";
 import { Cl } from "@stacks/transactions";
 
