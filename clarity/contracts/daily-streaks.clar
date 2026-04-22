@@ -344,6 +344,7 @@
 )
 
 (define-read-only (get-badge-level (who principal))
+;; Returns the badge level (0-4) for a given principal based on streak
 	(ok (get badge-level (get-profile-internal who)))
 )
 
