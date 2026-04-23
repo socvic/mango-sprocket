@@ -70,3 +70,4 @@ See `frontend/.env.example` for required variables.
 - The contract enforces check-in windows and streak logic.
 - Default frontend contract values are placeholders and must be updated to your deployed contract before use.
 # Non-breaking comment 1
+# Non-breaking comment 2
