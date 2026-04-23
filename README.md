@@ -79,3 +79,4 @@ See `frontend/.env.example` for required variables.
 # Non-breaking comment 8
 # Non-breaking comment 9
 # Non-breaking comment 10
+# Non-breaking comment 11
