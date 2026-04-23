@@ -117,3 +117,4 @@ See `frontend/.env.example` for required variables.
 # Non-breaking comment 46
 # Non-breaking comment 47
 # Non-breaking comment 48
+# Non-breaking comment 49
