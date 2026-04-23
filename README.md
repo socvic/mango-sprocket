@@ -71,3 +71,4 @@ See `frontend/.env.example` for required variables.
 - Default frontend contract values are placeholders and must be updated to your deployed contract before use.
 # Non-breaking comment 1
 # Non-breaking comment 2
+# Non-breaking comment 3
