@@ -146,3 +146,4 @@ See `frontend/.env.example` for required variables.
 # PR non-breaking comment 5
 # PR non-breaking comment 6
 # PR non-breaking comment 7
+# PR non-breaking comment 8
