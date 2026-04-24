@@ -29,6 +29,9 @@
   --transition-easing: ease;
   --focus-ring-color: color-mix(in srgb, var(--button-start) 70%, white 30%);
   --card-shadow: 0 10px 24px rgba(70, 47, 18, 0.12);
+  --card-radius: 16px;
+  --button-radius: 10px;
+  --input-radius: 10px;
 }
 
 .grid {
