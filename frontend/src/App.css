@@ -196,7 +196,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid color-mix(in srgb, var(--button-start) 70%, white 30%);
+  outline: 2px solid var(--focus-ring-color);
   outline-offset: 1px;
 }
 
