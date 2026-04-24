@@ -33,7 +33,7 @@
   --button-radius: 10px;
   --input-radius: 10px;
   --stat-radius: 12px;
-  --note-min-height: 70px;
+  --note-min-height: var(--note-min-height);
 }
 
 .grid {
@@ -207,7 +207,7 @@ textarea:focus {
 }
 
 .note-input {
-  min-height: 70px;
+  min-height: var(--note-min-height);
   resize: vertical;
   font-family: inherit;
 }
