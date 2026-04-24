@@ -33,6 +33,7 @@
   --button-radius: 10px;
   --input-radius: 10px;
   --stat-radius: 12px;
+  --note-min-height: 70px;
 }
 
 .grid {
