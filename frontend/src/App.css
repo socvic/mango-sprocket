@@ -35,6 +35,7 @@
   --stat-radius: 12px;
   --note-min-height: var(--note-min-height);
   --card-padding: var(--card-padding);
+  --page-gap: 1rem;
 }
 
 .grid {
