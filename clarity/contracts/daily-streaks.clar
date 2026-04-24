@@ -3,6 +3,7 @@
 
 
 ;;; === Constants ===
+;; Approximately 24 hours worth of Stacks blocks
 (define-constant CHECKIN_WINDOW_BLOCKS u144)
 ;; ~144 blocks = ~24 hours at ~10min per block
 (define-constant GRACE_BLOCKS u24)
