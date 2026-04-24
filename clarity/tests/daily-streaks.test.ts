@@ -1,4 +1,9 @@
 /**
+ * @file daily-streaks.test.ts
+ * Comprehensive test suite for the daily-streaks Clarity contract.
+ * Covers check-ins, streaks, badges, challenges, social features, and freeze passes.
+ */
+/**
  * Unit tests for the daily-streaks Clarity contract.
  * Uses Clarinet SDK simnet for on-chain simulation.
  */
