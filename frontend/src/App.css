@@ -27,6 +27,7 @@
   --button-secondary-border: #96754b;
   --transition-duration: 0.14s;
   --transition-easing: ease;
+  --focus-ring-color: color-mix(in srgb, var(--button-start) 70%, white 30%);
 }
 
 .grid {
