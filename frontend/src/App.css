@@ -191,7 +191,7 @@ textarea {
   width: 100%;
   border: 1px solid #c8ae89;
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--button-radius);
   padding: 0.55rem 0.7rem;
   background: color-mix(in srgb, var(--card-bg-start) 70%, white 30%);
   color: var(--text-main);
@@ -214,7 +214,7 @@ button {
   border: 1px solid var(--button-border);
   background: linear-gradient(180deg, var(--button-start), var(--button-end));
   color: #fff;
-  border-radius: 10px;
+  border-radius: var(--button-radius);
   padding: 0.56rem 0.9rem;
   cursor: pointer;
   font-weight: 650;
