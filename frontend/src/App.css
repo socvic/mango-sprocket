@@ -25,6 +25,8 @@
   --button-secondary-start: #c69f6a;
   --button-secondary-end: #a98351;
   --button-secondary-border: #96754b;
+  --transition-duration: 0.14s;
+  --transition-easing: ease;
 }
 
 .grid {
