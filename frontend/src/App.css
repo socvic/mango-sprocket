@@ -208,6 +208,7 @@ textarea:focus {
 .note-input {
   min-height: 70px;
   resize: vertical;
+  font-family: inherit;
 }
 
 /* === Buttons === */
