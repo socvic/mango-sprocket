@@ -1,3 +1,9 @@
+/**
+ * Entry point for the Daily Check-In Streaks application.
+ * Connects to the Stacks blockchain via wallet integration.
+ *
+ * @module App
+ */
 import { connect, disconnect, isConnected, request } from '@stacks/connect'
 import { Cl, cvToHex, cvToJSON, hexToCV, type ClarityValue } from '@stacks/transactions'
 import { useCallback, useEffect, useMemo, useState } from 'react'
