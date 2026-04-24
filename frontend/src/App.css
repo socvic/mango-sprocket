@@ -34,7 +34,7 @@
   --input-radius: 10px;
   --stat-radius: 12px;
   --note-min-height: var(--note-min-height);
-  --card-padding: 1.2rem;
+  --card-padding: var(--card-padding);
 }
 
 .grid {
@@ -49,7 +49,7 @@
   border: 1px solid var(--card-border);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
-  padding: 1.2rem;
+  padding: var(--card-padding);
 }
 
 .hero {
