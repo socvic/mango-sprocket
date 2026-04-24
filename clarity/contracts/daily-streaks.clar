@@ -6,6 +6,7 @@
 ;; Approximately 24 hours worth of Stacks blocks
 (define-constant CHECKIN_WINDOW_BLOCKS u144)
 ;; ~144 blocks = ~24 hours at ~10min per block
+;; Grace period after window expiry (~4 hours)
 (define-constant GRACE_BLOCKS u24)
 ;; ~24 blocks = ~4 hours grace after window
 
