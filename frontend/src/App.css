@@ -146,7 +146,7 @@ h2 {
 
 .stat {
   border: 1px solid color-mix(in srgb, var(--card-border) 70%, white 30%);
-  border-radius: var(--stat-radius, 12px);
+  border-radius: var(--stat-radius);
   background: color-mix(in srgb, var(--card-bg-start) 80%, white 20%);
   padding: 0.65rem;
 }
