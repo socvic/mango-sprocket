@@ -36,6 +36,7 @@
   --note-min-height: var(--note-min-height);
   --card-padding: var(--card-padding);
   --page-gap: 1rem;
+  --grid-gap: 1rem;
 }
 
 .grid {
