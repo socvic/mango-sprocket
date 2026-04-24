@@ -1,3 +1,4 @@
+;; Contract version: 1.0.0
 ;; Daily check-in streak tracker with social and campaign primitives.
 
 
