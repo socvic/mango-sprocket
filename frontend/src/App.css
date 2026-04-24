@@ -44,7 +44,7 @@
 .card {
   background: linear-gradient(145deg, var(--card-bg-start), var(--card-bg-end));
   border: 1px solid var(--card-border);
-  border-radius: 16px;
+  border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   padding: 1.2rem;
 }
