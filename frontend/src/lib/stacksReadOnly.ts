@@ -1,7 +1,7 @@
 import { cvToJSON, hexToCV } from '@stacks/transactions'
 import { CONTRACT_ADDRESS, CONTRACT_NAME, STACKS_API_BASE } from '../config/stacks'
 
-export async function callReadOnly(functionName: string, args: string[], sender: string): Promise<any> {
+export async function callReadOnly(functionName: string, args: string[], sender: string): Promise<unknown> {
   const response = await fetch(
     `${STACKS_API_BASE}/v2/contracts/call-read/${CONTRACT_ADDRESS}/${CONTRACT_NAME}/${functionName}`,
     {
@@ -16,5 +16,5 @@ export async function callReadOnly(functionName: string, args: string[], sender:
     throw new Error(data.cause || `Call failed: ${functionName}`)
   }
 
-  return cvToJSON(hexToCV(data.result))
+  return cvToJSON(hexToCV(data.result)) as unknown
 }
