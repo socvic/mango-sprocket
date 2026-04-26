@@ -47,6 +47,7 @@
 (define-data-var group-nonce uint u0)
 
 ;;; === Maps ===
+;; Stores per-user streak, badge, and freeze pass state
 (define-map profiles
 	principal
 	{
@@ -56,7 +57,6 @@
 		total-checkins: uint,
 		badge-level: uint,
 		freeze-passes: uint,
-;; Stores per-user streak, badge, and freeze pass state
 	}
 )
 
@@ -74,6 +74,7 @@
 (define-map user-event-count principal uint)
 (define-map latest-notes principal (string-utf8 140))
 
+;; Stores challenge metadata keyed by challenge id
 (define-map challenges
 	uint
 	{
@@ -83,7 +84,6 @@
 		end-height: uint,
 		active: bool,
 		participants: uint,
-;; Stores challenge metadata keyed by challenge id
 	}
 )
 
@@ -103,8 +103,8 @@
 	uint
 )
 
-(define-map friends
 ;; Bidirectional friend relationship map
+(define-map friends
 	{
 		user: principal,
 		friend: principal,
@@ -112,8 +112,8 @@
 	bool
 )
 
-(define-map groups
 ;; Stores group metadata keyed by group id
+(define-map groups
 	uint
 	{
 		owner: principal,
@@ -556,4 +556,3 @@
 		(map-get? profiles who)
 	)
 )
-
