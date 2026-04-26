@@ -6,7 +6,7 @@ export async function callContract(
   contractId: `${string}.${string}`,
   functionName: string,
   functionArgs: ClarityValue[],
-): Promise<unknown> {
+): Promise<Awaited<ReturnType<typeof request>>> {
   return request('stx_callContract', {
     contract: contractId,
     functionName,
