@@ -4,13 +4,14 @@
  *
  * @module App
  */
-import { connect, disconnect, isConnected, request } from '@stacks/connect'
+import { connect, disconnect, isConnected } from '@stacks/connect'
 import { Cl, cvToHex, type ClarityValue } from '@stacks/transactions'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './App.css'
-import { CONTRACT_ADDRESS, CONTRACT_ID, NETWORK } from './config/stacks'
+import { CONTRACT_ADDRESS, CONTRACT_ID } from './config/stacks'
 import { formatShortAddress } from './lib/format'
 import { callReadOnly as callReadOnlyApi } from './lib/stacksReadOnly'
+import { callContract } from './lib/stacksTx'
 import type { ChallengeDetails, Profile, Stats } from './types/contract'
 
 /**
@@ -72,15 +73,7 @@ function App() {
 // Submit a contract call transaction via the connected wallet
   const callTx = useCallback(
     async (functionName: string, functionArgs: ClarityValue[]) => {
-      const typedContractId = contractId as `${string}.${string}`
-      return request('stx_callContract', {
-        contract: typedContractId,
-        functionName,
-        functionArgs,
-        network: NETWORK,
-        postConditionMode: 'deny',
-        sponsored: false,
-      })
+      return callContract(contractId as `${string}.${string}`, functionName, functionArgs)
     },
     [contractId],
   )
