@@ -9,6 +9,7 @@ import { Cl, cvToHex, cvToJSON, hexToCV, type ClarityValue } from '@stacks/trans
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './App.css'
 import { CONTRACT_ADDRESS, CONTRACT_ID, CONTRACT_NAME, NETWORK, STACKS_API_BASE } from './config/stacks'
+import { formatShortAddress } from './lib/format'
 import type { ChallengeDetails, Profile, Stats } from './types/contract'
 
 /**
@@ -55,7 +56,7 @@ function App() {
   const isWalletConnected = Boolean(address)
   const shortAddress = useMemo(() => {
     if (!address) return 'No wallet connected'
-    return `${address.slice(0, 7)}...${address.slice(-6)}`
+    return formatShortAddress(address)
   }, [address])
 
 // Call a read-only contract function via the Stacks API
