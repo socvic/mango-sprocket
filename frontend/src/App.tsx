@@ -5,11 +5,12 @@
  * @module App
  */
 import { connect, disconnect, isConnected, request } from '@stacks/connect'
-import { Cl, cvToHex, cvToJSON, hexToCV, type ClarityValue } from '@stacks/transactions'
+import { Cl, cvToHex, type ClarityValue } from '@stacks/transactions'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './App.css'
-import { CONTRACT_ADDRESS, CONTRACT_ID, CONTRACT_NAME, NETWORK, STACKS_API_BASE } from './config/stacks'
+import { CONTRACT_ADDRESS, CONTRACT_ID, NETWORK } from './config/stacks'
 import { formatShortAddress } from './lib/format'
+import { callReadOnly as callReadOnlyApi } from './lib/stacksReadOnly'
 import type { ChallengeDetails, Profile, Stats } from './types/contract'
 
 /**
@@ -59,24 +60,11 @@ function App() {
     return formatShortAddress(address)
   }, [address])
 
-// Call a read-only contract function via the Stacks API
+  // Call a read-only contract function via the Stacks API
   const callReadOnly = useCallback(
     async (functionName: string, args: string[] = []) => {
       const sender = address || CONTRACT_ADDRESS
-      const response = await fetch(
-        `${STACKS_API_BASE}/v2/contracts/call-read/${CONTRACT_ADDRESS}/${CONTRACT_NAME}/${functionName}`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ sender, arguments: args }),
-        },
-      )
-
-      const data = await response.json()
-      if (!data.okay) {
-        throw new Error(data.cause || `Call failed: ${functionName}`)
-      }
-      return cvToJSON(hexToCV(data.result))
+      return callReadOnlyApi(functionName, args, sender)
     },
     [address],
   )
