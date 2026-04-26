@@ -14,6 +14,7 @@ const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || 'SP2V3QE7H5D09
 const CONTRACT_NAME = import.meta.env.VITE_CONTRACT_NAME || 'daily-streaks'
 const STACKS_API_BASE = import.meta.env.VITE_STACKS_API_BASE || 'https://api.hiro.so'
 const NETWORK = import.meta.env.VITE_STACKS_NETWORK || 'mainnet'
+const CONTRACT_ID = `${CONTRACT_ADDRESS}.${CONTRACT_NAME}` as const
 
 /** Global contract statistics from get-global-stats */
 type Stats = {
@@ -84,7 +85,7 @@ function App() {
   const [submitting, setSubmitting] = useState(false)
   const [status, setStatus] = useState('Ready')
 
-  const contractId = useMemo(() => `${CONTRACT_ADDRESS}.${CONTRACT_NAME}`, [])
+  const contractId = CONTRACT_ID
   const isWalletConnected = Boolean(address)
   const shortAddress = useMemo(() => {
     if (!address) return 'No wallet connected'
